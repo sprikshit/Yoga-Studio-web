@@ -17,7 +17,7 @@ h6 {
 }
 
 a {
-    color: #454545;
+    color: #ffff;
     transition: .3s;
 }
 
@@ -278,8 +278,8 @@ a:focus {
     height: 100vh;
     padding: 90px 0;
     background: url("/images/hero.jpeg");
-    background-size: cover; /* Optional: Adjust the background size as needed */
-    background-position: center; /* Optional: Center the background image */
+    background-size: cover; 
+    background-position: center; 
     overflow: hidden;
 }
 .hero .overlay{
@@ -306,6 +306,7 @@ a:focus {
     margin-top: 150px;
 }
 
+/* Default styles for large screens */
 .hero .hero-text h1 {
     color: #dbffdc;
     font-size: 60px;
@@ -339,69 +340,76 @@ a:focus {
     margin-right: 10px;
 }
 
+/* Media query for medium-sized screens (max-width: 991.98px) */
 @media (max-width: 991.98px) {
-
     .hero .hero-text {
         padding: 0 15px;
     }
     
     .hero .hero-text h1 {
-        font-size: 65px;
+        font-size: 50px;
     }
     
     .hero .hero-text p {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .hero .hero-text .btn {
-        padding: 12px 30px;
-        letter-spacing: 1px;
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 767.98px) {
-    
     .hero .hero-text h1 {
-        font-size: 51px;
+        font-size: 40px;
         font-weight: 600;
     }
     
     .hero .hero-text p {
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .hero .hero-text .btn {
-        padding: 10px 15px;
-        font-weight: 400;
-        letter-spacing: 1px;
+        padding: 8px 16px;
+        font-size: 12px;
     }
-	
-	.hero .hero-image {
-		text-align: left;
-		margin-top: 30px;
-	}
-	
-	.hero .hero-image img {
-		max-width: 100%;
-		max-height: 100%;
-	}
+    
+    .hero .hero-image {
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .hero .hero-image img {
+        max-width: 100%;
+        height: auto; 
+    }
 }
 
+/* Media query for extra-small screens (max-width: 575.98px) */
 @media (max-width: 575.98px) {
     .hero .hero-text h1 {
-        font-size: 35 hpx;
+        font-size: 30px;
         font-weight: 600;
     }
     
     .hero .hero-text p {
-        font-size: 18px;
+        font-size: 12px;
     }
     
     .hero .hero-text .btn {
-        padding: 8px 10px;
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0;
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .hero .hero-image {
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .hero .hero-image img {
+        max-width: 100%;
+        height: auto; 
     }
 }
 
@@ -409,20 +417,23 @@ a:focus {
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
+/* Page Header styles for all screens */
 .page-header {
     position: relative;
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
-    background: url(/bg.avif)
+    background: url(/bg.avif);
+    background-size: cover; /* Make the background image responsive by covering the header */
 }
-.footer .overlay{
+
+/* Footer overlay styles (unchanged) */
+.footer .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     background-color: #00000070;
-    
 }
 
 
@@ -1947,7 +1958,7 @@ a:focus {
 .footer .container-fluid {
     padding: 90px 0 0 0;
     /* If you want to apply an overlay color to the background image, you can use a linear gradient like this: */
-    /* background: linear-gradient(rgba(52, 49, 72, .9), rgba(52, 49, 72, .9)), url(../images/DSC09693.JPG); */
+    /* background: linear-gradient(rgba(237, 236, 241, 0), rgba(52, 49, 72, .9)), url(../images/DSC09693.JPG); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
