@@ -17,7 +17,7 @@ h6 {
 }
 
 a {
-    color: #ffff;
+    color: #ffff    ;
     transition: .3s;
 }
 
@@ -198,7 +198,7 @@ a:focus {
 
 .navbar .navbar-brand img {
     max-width: 100%;
-    max-height: 40px;
+    max-height: 60px;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -206,7 +206,7 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #c9ffcbd1;
+    color: #17A2B8;
     font-weight: 700;
 
 }

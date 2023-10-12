@@ -1,0 +1,31 @@
+/* Teal-colored headings */
+h2,h1, .section p strong {
+    color: teal; /* Teal color */
+    margin-bottom: 30px;
+}
+
+/* Style for strong elements (if needed) */
+strong {
+    font-weight: bold;
+    color: #333; /* Color for strong text, adjust as needed */
+    margin-top: 30px;
+}
+
+/* Responsive table styling */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Center-align tables */
+.table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Adjust the max width for responsiveness */
+}
+
+/* Optional: Add media queries for different screen sizes */
+@media (max-width: 768px) {
+    .table {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
