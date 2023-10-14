@@ -206,7 +206,7 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #17A2B8;
+    color: #ffffff;
     font-weight: 700;
 
 }
@@ -1945,6 +1945,8 @@ a:focus {
     background: url(../images/DSC09693.JPG);
     background-size: cover; 
     background-position: center; 
+    font-family:Georgia, 'Times New Roman', Times, serif
+
 }
 .footer .overlay{
     position: absolute;
@@ -1978,9 +1980,10 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    ;
 }
 
 .footer .footer-info .footer-logo span {
@@ -2067,6 +2070,19 @@ a:focus {
 .footer .copyright p a:hover {
     color: teal;
 }
+/* Default styling for larger screens */
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .footer-menu {
+        flex-direction: column; /* Stack items on top of each other */
+    }
+}
+
 
 @media (max-width: 767.98px) {
     .footer .copyright p,
